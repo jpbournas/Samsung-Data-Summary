@@ -46,5 +46,5 @@ colnames(sub_meanstd2)[1] <- "Subject"
 final_output <- aggregate(. ~ ActivityName+Subject,data = sub_meanstd2,FUN=mean)
 
 ## create the final file
-write.table(final_output,file="SamsungMeasureSummary.csv",sep=" ",row.names=FALSE)
+write.table(final_output,file="SamsungMeasureSummary.txt",sep=" ",row.names=FALSE)
 
